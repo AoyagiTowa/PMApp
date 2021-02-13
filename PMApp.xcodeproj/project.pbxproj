@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		8A35980725D7823600D1CD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A35980525D7823600D1CD8C /* Main.storyboard */; };
 		8A35980925D7823800D1CD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A35980825D7823800D1CD8C /* Assets.xcassets */; };
 		8A35980C25D7823800D1CD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A35980A25D7823800D1CD8C /* LaunchScreen.storyboard */; };
+		8A35981525D7827400D1CD8C /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8A35981425D7827400D1CD8C /* background.jpeg */; };
+		8A35981925D7831800D1CD8C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 8A35981825D7831800D1CD8C /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		8A35980825D7823800D1CD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A35980B25D7823800D1CD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A35980D25D7823800D1CD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A35981425D7827400D1CD8C /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A35981925D7831800D1CD8C /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 		8A3597FE25D7823600D1CD8C /* PMApp */ = {
 			isa = PBXGroup;
 			children = (
+				8A35981425D7827400D1CD8C /* background.jpeg */,
 				8A3597FF25D7823600D1CD8C /* AppDelegate.swift */,
 				8A35980125D7823600D1CD8C /* SceneDelegate.swift */,
 				8A35980325D7823600D1CD8C /* ViewController.swift */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = PMApp;
+			packageProductDependencies = (
+				8A35981825D7831800D1CD8C /* PKHUD */,
+			);
 			productName = PMApp;
 			productReference = 8A3597FC25D7823600D1CD8C /* PMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 8A3597F325D7823600D1CD8C;
+			packageReferences = (
+				8A35981725D7831800D1CD8C /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 8A3597FD25D7823600D1CD8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 				8A35980C25D7823800D1CD8C /* LaunchScreen.storyboard in Resources */,
 				8A35980925D7823800D1CD8C /* Assets.xcassets in Resources */,
 				8A35980725D7823600D1CD8C /* Main.storyboard in Resources */,
+				8A35981525D7827400D1CD8C /* background.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A35981725D7831800D1CD8C /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A35981825D7831800D1CD8C /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A35981725D7831800D1CD8C /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A3597F425D7823600D1CD8C /* Project object */;
 }
